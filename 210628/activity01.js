@@ -97,6 +97,7 @@ let checkPlayListOptionReplay = (option) => {
   } else if (option === PLAYING_ALL_SING_ONETIME && isLastSong) {
     console.log('모든 재생이 완료되었습니다. 다시 실행해주세요!');
   } else if (option === PLAYING_ALL_SING_ONETIME) {
+    currentPlayingIndex += 1;
     playMp3(option);
   } else {
     console.log('에러가 발생했습니다.');
